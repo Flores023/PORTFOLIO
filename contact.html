@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gradient-to-b from-[#1e4fa1] to-black text-white flex flex-col items-center min-h-screen">
+
+<header class="w-full absolute top-[20px] right-[20px]">
+  <nav class="flex justify-between items-start w-full">
+    <!-- Logo -->
+    <div class="ml-[30px] mt-[10px]">
+      <img src="logo.png" alt="Logo" class="w-[150px] h-auto" />
+    </div>
+
+    <!-- Menu -->
+    <ul class="list-none flex justify-end items-start">
+      <li class="mx-[15px] mt-[10px]">
+        <a href="home.html" class="no-underline text-white text-[1.2rem] font-bold hover:text-[#7b2a11] transition-colors duration-300">Home</a>
+      </li>
+      <li class="mx-[15px] mt-[10px]">
+        <a href="resume.html" class="no-underline text-white text-[1.2rem] font-bold hover:text-[#7b2a11] transition-colors duration-300">Resume</a>
+      </li>
+      <li class="mx-[15px] mt-[10px]">
+        <a href="project.html" class="no-underline text-white text-[1.2rem] font-bold hover:text-[#7b2a11] transition-colors duration-300">Projects</a>
+      </li>
+      <li class="mx-[15px] mt-[10px]">
+        <a href="contact.html" class="no-underline text-white text-[1.2rem] font-bold hover:text-[#7b2a11] transition-colors duration-300">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Main Content -->
+  <section class="contact-section w-full px-[50px] pt-[100px] pb-[50px] text-center max-w-[1200px] mx-auto flex-grow">
+    <div class="contact-header">
+      <h1 class="text-[2.5rem]">Contact Me</h1>
+      <h2 class="text-[2rem] mt-[10px]">Have You Any Questions?</h2>
+      <p class="text-[1.2rem] mt-[5px]">I'M AT YOUR SERVICE</p>
+    </div>
+
+    <div class="contact-container flex justify-center items-center gap-[30px] p-[30px] flex-wrap">
+      <!-- Contact Info -->
+      <div class="contact-info w-full md:w-1/2 text-left p-[20px]">
+        <p class="text-[1.5rem] font-bold flex items-center">
+          <i class="fas fa-phone-alt text-[#007BFF] text-[1.8rem] mr-[10px]"></i> +639543046099
+        </p><br>
+        <p class="text-[1.5rem] font-bold flex items-center">
+          <i class="fas fa-envelope text-[#007BFF] text-[1.8rem] mr-[10px]"></i> cheskayefugaban04@gmail.com
+        </p><br>
+        <h3 class="text-[1.8rem] text-[#007BFF] mt-[15px]">Send Me An Email</h3><br>
+        <p class="text-[1.4rem] font-normal mt-[10px]">I'M VERY RESPONSIVE TO MESSAGES</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form w-full md:w-1/2 flex flex-col gap-[15px] p-[20px]" action="submit.html" method="post">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-[10px] text-base rounded border-none text-black" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-[10px] text-base rounded border-none text-black" />
+        <textarea name="message" placeholder="Your Message" required class="w-full h-[100px] p-[10px] text-base rounded border-none text-black"></textarea>
+        <button type="submit" class="bg-[#007BFF] text-white p-[10px] rounded text-base hover:bg-[#0056b3]">Submit</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
